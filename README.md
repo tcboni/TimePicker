@@ -1,14 +1,30 @@
-# jQuery Timepicker [![Build Status](http://img.shields.io/travis/wvega/timepicker.svg)](https://travis-ci.org/wvega/timepicker) [![Gitter chat](https://badges.gitter.im/wvega/timepicker.png)](https://gitter.im/wvega/timepicker)
+# jQuery TimePicker
 
-A jQuery plugin to enhance standard form input fields helping users to select
-(or type) times.
+jQuery TimePicker is a plugin to help users easily input time entries. It works by allowing the user to type times in a free format or selecting them from a dropdown menu.
 
-Please visit http://timepicker.co for Documentation, Examples and Getting Started information.
+The plugin will automatically convert all time entries using a format that can be changed passing the timeFormat option; the default value is hh:mm p which will give something like 02:16 PM.
 
-## Release History
+The following are a few examples of the strings an user can type and how the plugin understands them:
 
-See [CHANGELOG](https://github.com/wvega/timepicker/blob/master/CHANGELOG).
+| Input | Output (using the default format) |
+| ------------- | ------------- |
+| 1234 | 12:34 AM |
+| 1234p | 12:34 PM |
+| 456 | 04:56 AM |
+| 1656 | 04:56 PM |
+| 1:1 P | 1:10 PM |
+| 1:9 A | 1:09 AM |
+| 8:59 | 8:59 AM |
+| 12030 | 1:20:30 AM |
+| 46 | 05:00 AM (it's interpreted as 4 hours plus 60 minutes) |
 
-## License
-Copyright (c) 2012 Willington Vega
-Licensed under the MIT, GPL licenses.
+There are other supported formats, all inspired by the behavior of a similar timepicker used in Google Calendar. To see more, try the demos.
+
+## How to Use
+To use jQuery TimePicker you'll need to include two files: jquery.timepicker.js and jquery.timepicker.css. Then, assuming you have an <input> element in your document, you can use the following code to initialize the plugin:
+
+```javascript
+$(document).ready(function(){
+  $('input.timepicker').timepicker({});
+});
+```
