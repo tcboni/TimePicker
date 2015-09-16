@@ -30,43 +30,7 @@ $(document).ready(function(){
 ```
 
 ## Options
-        <div class="span10 columns">
-            <p><span class="label important">string</span> The format of the time string displayed in the input and the menu items in the combobox. Available modifiers are:</p>
-
-            <table class="table table-bordered table-striped table-hover table-condensed">
-                <tbody>
-                    <tr>
-                        <td><code>h</code></td>
-                        <td>12 hour without leading 0.</td>
-                        <td><code>hh</code></td>
-                        <td>12 hour with leading 0.</td>
-                    </tr>
-                    <tr>
-                        <td><code>H</code></td>
-                        <td>24 hour without leading 0.</td>
-                        <td><code>HH</code></td>
-                        <td>24 hour with leading 0.</td>
-                    </tr>
-                    <tr>
-                        <td><code>m</code></td>
-                        <td>minutes without leading 0.</td>
-                        <td><code>mm</code></td>
-                        <td>minutes with leading 0.</td>
-                    </tr>
-                    <tr>
-                        <td><code>s</code></td>
-                        <td>seconds without leading 0.</td>
-                        <td><code>ss</code></td>
-                        <td>seconds with leading 0.</td>
-                    </tr>
-                    <tr>
-                        <td><code>p</code></td>
-                        <td>AM or PM</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+| `timeFormat` | (string) The format of the time string displayed in the input and the menu items in the combobox. Available modifiers are: ( `h`: 12 hour without leading 0. `hh`: 12 hour with leading 0. `H`: 24 hour without leading 0. `HH`: 24 hour with leading 0. `m`: minutes without leading 0. `mm`: minutes with leading 0. `s`: seconds without leading 0. `ss`: seconds with leading 0. `p`: AM or PM) |
 
 <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
     <span class="nx">$</span><span class="p">(</span><span class="s1">'input.timepicker'</span><span class="p">).</span><span class="nx">timepicker</span><span class="p">({</span> <span class="nx">timeFormat</span><span class="o">:</span> <span class="s1">'h:mm:ss p'</span> <span class="p">});</span>
