@@ -32,7 +32,7 @@ $(document).ready(function(){
 ## Options
 | Option | Description |
 | ------------- | ------------- |
-| `timeFormat` | (string) The format of the time string displayed in the input and the menu items in the combobox. Available modifiers are: ( `h`: 12 hour without leading 0. `hh`: 12 hour with leading 0. `H`: 24 hour without leading 0. `HH`: 24 hour with leading 0. `m`: minutes without leading 0. `mm`: minutes with leading 0. `s`: seconds without leading 0. `ss`: seconds with leading 0. `p`: AM or PM) |
+| `timeFormat` | `string` The format of the time string displayed in the input and the menu items in the combobox. Available modifiers are: ( `h`: 12 hour without leading 0. `hh`: 12 hour with leading 0. `H`: 24 hour without leading 0. `HH`: 24 hour with leading 0. `m`: minutes without leading 0. `mm`: minutes with leading 0. `s`: seconds without leading 0. `ss`: seconds with leading 0. `p`: AM or PM) |
 | `defaultTime` | A `Date` object, `string` or the word `'now`. Only the time parts (getHours, getMinutes) of the object are important. It must be a valid time, according to `minTime`, `minHour`, `minMinutes`, `maxTime`, `maxHour` and `maxMinutes`. If `'now'` is passed, the current time as returned by `new Date()` will be used as the defaul |
 | `minTime` | A `Date` object or `string`. Only the time parts (getHours, getMinutes) of the object are important. Time entries before minTime won't be displayed/allowed. |
 | `minHour` | `int`. Time entries with an 24-hour part before `minHour` won't be displayed/allowed. Ignored if `minTime` is set. |
