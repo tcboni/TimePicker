@@ -30,6 +30,7 @@ $(document).ready(function(){
 ```
 
 ## Options
+| Option | Description |
 | ------------- | ------------- |
 | `timeFormat` | (string) The format of the time string displayed in the input and the menu items in the combobox. Available modifiers are: ( `h`: 12 hour without leading 0. `hh`: 12 hour with leading 0. `H`: 24 hour without leading 0. `HH`: 24 hour with leading 0. `m`: minutes without leading 0. `mm`: minutes with leading 0. `s`: seconds without leading 0. `ss`: seconds with leading 0. `p`: AM or PM) |
 | `defaultTime` | A `Date` object, `string` or the word `'now`. Only the time parts (getHours, getMinutes) of the object are important. It must be a valid time, according to `minTime`, `minHour`, `minMinutes`, `maxTime`, `maxHour` and `maxMinutes`. If `'now'` is passed, the current time as returned by `new Date()` will be used as the defaul |
@@ -48,6 +49,7 @@ $(document).ready(function(){
 | `scrollbar` | `boolean` Whether the scrollbars should be displayed or not. |
 
 ## Events
+| Event | Description |
 | ------------- | ------------- |
 | `change` | Event triggerd when the value of the input field changes. A Date object containing the selected time is passed as the first argument of the callback. |
 </article>
